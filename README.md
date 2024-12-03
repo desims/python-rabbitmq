@@ -88,3 +88,30 @@ def main():
         print("Stopping the chatbot...")
         connection.close()
 ```
+# Scalability Enhancements
+- Database Integration: Store processed messages for future analytics using MongoDB
+```python
+# MongoDB configuration
+MONGO_URI = "mongodb://localhost:27017/"
+DB_NAME = "chat_service"
+COLLECTION_NAME = "message_history"
+
+def save_message_to_db(user_message, bot_response):
+    """
+    Save the processed message to MongoDB.
+    """
+    if not service_health["mongodb_connected"]:
+        logging.error("Cannot save message: MongoDB is not connected.")
+        return
+
+    try:
+        message = {
+            "user_message": user_message,
+            "bot_response": bot_response,
+            "timestamp": datetime.now()
+        }
+        message_collection.insert_one(message)
+        logging.info("Message saved to MongoDB.")
+    except Exception as e:
+        logging.error(f"Failed to save message to MongoDB: {e}")
+```
