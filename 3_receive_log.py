@@ -4,6 +4,16 @@ import json
 import logging
 from datetime import datetime
 
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s]: %(message)s",
+    handlers=[
+        logging.FileHandler("consumer.log"),
+        logging.StreamHandler()
+    ]
+)
+
 # RabbitMQ configuration
 RABBITMQ_HOST = "localhost"
 EXCHANGE_NAME = "chat_exchange"
@@ -15,16 +25,6 @@ RESPONSES = {
     "Tell me a joke": "Why did the chicken cross the road? To get to the other side! 😂",
     "What's the time?": "Sorry, I can't tell the exact time right now! ⏰"
 }
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s]: %(message)s",
-    handlers=[
-        logging.FileHandler("chatbot.log"),
-        logging.StreamHandler()
-    ]
-)
 
 def process_message(body):
     """
