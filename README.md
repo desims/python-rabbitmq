@@ -18,11 +18,11 @@ Key objectives:
 - RabbitMQ installed and running locally
 ## Setup
 1. Clone the repository:
-git clone https://github.com/your-repo-name.git
+git clone https://github.com/your-repo-name.git](https://github.com/desims/python-rabbitmq.git
 cd your-repo-name
-2. Install dependencies:
+3. Install dependencies:
 pip install -r requirements.txt
-3. Start RabbitMQ on your local machine.
+4. Start RabbitMQ on your local machine.
    
 ## Run the Producer
 python send.py
