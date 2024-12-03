@@ -88,6 +88,32 @@ def main():
         print("Stopping the chatbot...")
         connection.close()
 ```
+
+## Error Handling & Logging
+## Health Checks
+This project implements a **health check endpoint** for monitoring a RabbitMQ consumer service and its connected components (e.g., MongoDB). It ensures real-time visibility into service health.
+Feature :
+- **Health Check Endpoint**: Monitors RabbitMQ, MongoDB, and processing status.
+- **Multithreading**: Runs Flask health checks alongside the RabbitMQ consumer.
+- **Detailed Status**: Returns `"ok"` or `"degraded"` with component details.
+```4_receive_health.py```
+```python
+# Health Check Endpoint
+@app.route('/health', methods=['GET'])
+def health_check():
+    """Health check endpoint."""
+    with service_health_lock:
+        return jsonify({
+            "status": "ok" if service_health["rabbitmq_connected"] and service_health["processing"] and service_health["mongodb_connected"] else "degraded",
+            "details": service_health
+        })
+
+if __name__ == "__main__":
+    # Run Flask app for health checks in a separate thread
+    flask_thread = threading.Thread(target=app.run, kwargs={"port": 8080, "use_reloader": False})
+    flask_thread.daemon = True
+    flask_thread.start()
+```
 ## Scalability Enhancements
 - Database Integration: Store processed messages for future analytics using MongoDB
 ```python
@@ -114,24 +140,4 @@ def save_message_to_db(user_message, bot_response):
         logging.info("Message saved to MongoDB.")
     except Exception as e:
         logging.error(f"Failed to save message to MongoDB: {e}")
-```
-## Error Handling & Logging
-## Health Checks
-```4_receive_health.py```
-```python
-# Health Check Endpoint
-@app.route('/health', methods=['GET'])
-def health_check():
-    """Health check endpoint."""
-    with service_health_lock:
-        return jsonify({
-            "status": "ok" if service_health["rabbitmq_connected"] and service_health["processing"] and service_health["mongodb_connected"] else "degraded",
-            "details": service_health
-        })
-
-if __name__ == "__main__":
-    # Run Flask app for health checks in a separate thread
-    flask_thread = threading.Thread(target=app.run, kwargs={"port": 8080, "use_reloader": False})
-    flask_thread.daemon = True
-    flask_thread.start()
 ```
