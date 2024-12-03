@@ -30,3 +30,14 @@ pip install -r requirements.txt
 ## Run the Consumer
 ```python receive.py```
 
+# Implementation
+## Message Producer
+- Publishes messages to a fanout exchange in RabbitMQ.
+- Simulates high-traffic with randomized and sequential messages.
+Code: 1_send.py
+## Message Consumer
+- Listens to the queue and processes incoming messages.
+- Provides chatbot-like responses based on messages map:
+   "Hello" → "Hi there! 😊"
+   "Tell me a joke" → "Why did the chicken cross the road? To get to the other side! 😂"
+Code: 2_receive.py
