@@ -1,0 +1,304 @@
+2024-12-03 14:38:58,388 [INFO]: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2024-12-03 14:38:58,388 [INFO]: Socket connected: <socket.socket fd=428, family=23, type=1, proto=6, laddr=('::1', 58511, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-12-03 14:38:58,388 [INFO]: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C3207740>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C3207740> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-12-03 14:38:58,397 [INFO]: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C3207740> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-12-03 14:38:58,397 [INFO]: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C3207740> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-12-03 14:38:58,397 [INFO]: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C3207740> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-12-03 14:38:58,397 [INFO]: Created channel=1
+2024-12-03 14:38:58,406 [INFO]: Chatbot is ready and listening for messages...
+2024-12-03 14:39:47,491 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:39:47'}
+2024-12-03 14:39:47,993 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:39:47'}
+2024-12-03 14:39:48,495 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:39:48'}
+2024-12-03 14:39:48,997 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:39:48'}
+2024-12-03 14:39:49,499 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:39:49'}
+2024-12-03 14:39:50,002 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:39:50'}
+2024-12-03 14:39:50,504 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:39:50'}
+2024-12-03 14:39:51,005 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:39:51'}
+2024-12-03 14:39:51,508 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:39:51'}
+2024-12-03 14:39:52,010 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:39:52'}
+2024-12-03 14:39:52,512 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:39:52'}
+2024-12-03 14:39:53,013 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:39:53'}
+2024-12-03 14:39:53,514 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:39:53'}
+2024-12-03 14:39:54,016 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:39:54'}
+2024-12-03 14:39:54,516 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:39:54'}
+2024-12-03 14:39:55,017 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:39:55'}
+2024-12-03 14:39:55,521 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:39:55'}
+2024-12-03 14:39:56,021 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:39:56'}
+2024-12-03 14:39:56,522 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:39:56'}
+2024-12-03 14:39:57,025 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:39:57'}
+2024-12-03 14:39:57,525 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:39:57'}
+2024-12-03 14:39:58,026 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:39:58'}
+2024-12-03 14:39:58,530 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:39:58'}
+2024-12-03 14:39:59,030 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:39:59'}
+2024-12-03 14:39:59,531 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:39:59'}
+2024-12-03 14:41:18,432 [INFO]: Stopping the chatbot...
+2024-12-03 14:41:18,432 [INFO]: Closing connection (200): Normal shutdown
+2024-12-03 14:41:18,435 [INFO]: Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C3207740> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-12-03 14:41:18,435 [INFO]: Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000210C3207740> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-12-03 14:41:18,437 [INFO]: Closing connection (200): 'Normal shutdown'
+2024-12-03 14:41:18,445 [INFO]: Aborting transport connection: state=1; <socket.socket fd=428, family=23, type=1, proto=6, laddr=('::1', 58511, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-12-03 14:41:18,447 [INFO]: _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=428, family=23, type=1, proto=6, laddr=('::1', 58511, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-12-03 14:41:18,448 [INFO]: Deactivating transport: state=1; <socket.socket fd=428, family=23, type=1, proto=6, laddr=('::1', 58511, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-12-03 14:41:18,448 [INFO]: AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-03 14:41:18,449 [INFO]: Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-03 14:41:18,450 [INFO]: Closing transport socket and unlinking: state=3; <socket.socket fd=428, family=23, type=1, proto=6, laddr=('::1', 58511, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-12-03 14:41:18,450 [INFO]: User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-12-03 14:41:22,414 [INFO]: Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2024-12-03 14:41:22,415 [INFO]: Socket connected: <socket.socket fd=764, family=23, type=1, proto=6, laddr=('::1', 58554, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-12-03 14:41:22,415 [INFO]: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000229F94B7080>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000229F94B7080> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-12-03 14:41:22,422 [INFO]: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000229F94B7080> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-12-03 14:41:22,422 [INFO]: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000229F94B7080> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-12-03 14:41:22,422 [INFO]: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000229F94B7080> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-12-03 14:41:22,424 [INFO]: Created channel=1
+2024-12-03 14:41:22,431 [INFO]: Chatbot is ready and listening for messages...
+2024-12-03 14:41:27,729 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:41:27'}
+2024-12-03 14:41:28,229 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:41:28'}
+2024-12-03 14:41:28,733 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:41:28'}
+2024-12-03 14:41:29,235 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:41:29'}
+2024-12-03 14:41:29,737 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:41:29'}
+2024-12-03 14:41:30,241 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:41:30'}
+2024-12-03 14:41:30,743 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:41:30'}
+2024-12-03 14:41:31,246 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:41:31'}
+2024-12-03 14:41:31,748 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:41:31'}
+2024-12-03 14:41:32,249 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:41:32'}
+2024-12-03 14:41:32,749 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:41:32'}
+2024-12-03 14:41:33,251 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:41:33'}
+2024-12-03 14:41:33,755 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:41:33'}
+2024-12-03 14:41:34,255 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:41:34'}
+2024-12-03 14:41:34,758 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:41:34'}
+2024-12-03 14:41:35,260 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:41:35'}
+2024-12-03 14:41:35,760 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:41:35'}
+2024-12-03 14:41:36,265 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:41:36'}
+2024-12-03 14:41:36,765 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:41:36'}
+2024-12-03 14:41:37,267 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:41:37'}
+2024-12-03 14:41:37,770 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:41:37'}
+2024-12-03 14:41:38,272 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:41:38'}
+2024-12-03 14:41:38,774 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:41:38'}
+2024-12-03 14:41:39,275 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:41:39'}
+2024-12-03 14:41:39,777 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:41:39'}
+2024-12-03 14:41:40,277 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:41:40'}
+2024-12-03 14:41:40,782 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:41:40'}
+2024-12-03 14:41:41,282 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:41:41'}
+2024-12-03 14:41:41,785 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:41:41'}
+2024-12-03 14:42:06,807 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:06'}
+2024-12-03 14:42:07,309 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:07'}
+2024-12-03 14:42:07,810 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:07'}
+2024-12-03 14:42:08,313 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:08'}
+2024-12-03 14:42:08,815 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:08'}
+2024-12-03 14:42:09,317 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:09'}
+2024-12-03 14:42:09,818 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:09'}
+2024-12-03 14:42:10,317 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:10'}
+2024-12-03 14:42:10,821 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:10'}
+2024-12-03 14:42:11,323 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:11'}
+2024-12-03 14:42:11,827 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:11'}
+2024-12-03 14:42:12,328 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:12'}
+2024-12-03 14:42:12,827 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:12'}
+2024-12-03 14:42:13,332 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:13'}
+2024-12-03 14:42:13,832 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:13'}
+2024-12-03 14:42:14,337 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:14'}
+2024-12-03 14:42:14,839 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:14'}
+2024-12-03 14:42:15,340 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:15'}
+2024-12-03 14:42:15,840 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:15'}
+2024-12-03 14:42:16,344 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:16'}
+2024-12-03 14:42:16,847 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:16'}
+2024-12-03 14:42:17,347 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:17'}
+2024-12-03 14:42:17,850 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:17'}
+2024-12-03 14:42:18,353 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:18'}
+2024-12-03 14:42:18,855 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:18'}
+2024-12-03 14:42:19,357 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:19'}
+2024-12-03 14:42:19,859 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:19'}
+2024-12-03 14:42:20,360 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:20'}
+2024-12-03 14:42:20,861 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:20'}
+2024-12-03 14:42:21,361 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:21'}
+2024-12-03 14:42:21,862 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:21'}
+2024-12-03 14:42:22,366 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:22'}
+2024-12-03 14:42:22,867 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:22'}
+2024-12-03 14:42:23,368 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:23'}
+2024-12-03 14:42:23,868 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:23'}
+2024-12-03 14:42:24,371 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:24'}
+2024-12-03 14:42:24,872 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:24'}
+2024-12-03 14:42:25,374 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:25'}
+2024-12-03 14:42:25,876 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:25'}
+2024-12-03 14:42:26,379 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:26'}
+2024-12-03 14:42:26,878 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:26'}
+2024-12-03 14:42:27,382 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:27'}
+2024-12-03 14:42:27,885 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:27'}
+2024-12-03 14:42:28,386 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:28'}
+2024-12-03 14:42:28,886 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:28'}
+2024-12-03 14:42:29,388 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:29'}
+2024-12-03 14:42:29,890 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:29'}
+2024-12-03 14:42:30,392 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:30'}
+2024-12-03 14:42:30,891 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:30'}
+2024-12-03 14:42:31,394 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:31'}
+2024-12-03 14:42:31,895 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:31'}
+2024-12-03 14:42:32,396 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:32'}
+2024-12-03 14:42:32,898 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:32'}
+2024-12-03 14:42:33,399 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:33'}
+2024-12-03 14:42:33,902 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:33'}
+2024-12-03 14:42:34,403 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:34'}
+2024-12-03 14:42:34,903 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:34'}
+2024-12-03 14:42:35,407 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:35'}
+2024-12-03 14:42:35,908 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:35'}
+2024-12-03 14:42:36,411 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:36'}
+2024-12-03 14:42:36,912 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:36'}
+2024-12-03 14:42:37,415 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:37'}
+2024-12-03 14:42:37,914 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:37'}
+2024-12-03 14:42:38,418 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:38'}
+2024-12-03 14:42:38,920 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:38'}
+2024-12-03 14:42:39,420 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:39'}
+2024-12-03 14:42:39,924 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:39'}
+2024-12-03 14:42:40,426 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:40'}
+2024-12-03 14:42:40,925 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:40'}
+2024-12-03 14:42:41,428 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:41'}
+2024-12-03 14:42:41,930 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:41'}
+2024-12-03 14:42:42,432 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:42'}
+2024-12-03 14:42:42,934 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:42'}
+2024-12-03 14:42:43,436 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:43'}
+2024-12-03 14:42:43,939 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:43'}
+2024-12-03 14:42:44,442 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:44'}
+2024-12-03 14:42:44,942 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:44'}
+2024-12-03 14:42:45,445 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:45'}
+2024-12-03 14:42:45,947 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:45'}
+2024-12-03 14:42:46,449 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:46'}
+2024-12-03 14:42:46,951 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:46'}
+2024-12-03 14:42:47,453 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:47'}
+2024-12-03 14:42:47,952 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:47'}
+2024-12-03 14:42:48,457 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:48'}
+2024-12-03 14:42:48,959 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:48'}
+2024-12-03 14:42:49,459 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:49'}
+2024-12-03 14:42:49,962 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:49'}
+2024-12-03 14:42:50,466 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:50'}
+2024-12-03 14:42:50,965 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:50'}
+2024-12-03 14:42:51,469 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:51'}
+2024-12-03 14:42:51,972 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:51'}
+2024-12-03 14:42:52,474 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:52'}
+2024-12-03 14:42:52,977 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:52'}
+2024-12-03 14:42:53,478 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:53'}
+2024-12-03 14:42:53,980 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:53'}
+2024-12-03 14:42:54,482 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:54'}
+2024-12-03 14:42:54,983 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:54'}
+2024-12-03 14:42:55,486 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:55'}
+2024-12-03 14:42:55,988 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:55'}
+2024-12-03 14:42:56,489 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:56'}
+2024-12-03 14:42:56,991 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:42:56'}
+2024-12-03 14:42:57,492 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:42:57'}
+2024-12-03 14:42:57,996 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:57'}
+2024-12-03 14:42:58,496 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:42:58'}
+2024-12-03 14:42:59,000 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:42:58'}
+2024-12-03 14:42:59,502 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:42:59'}
+2024-12-03 14:43:00,004 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:00'}
+2024-12-03 14:43:00,505 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:00'}
+2024-12-03 14:43:01,005 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:01'}
+2024-12-03 14:43:01,510 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:01'}
+2024-12-03 14:43:02,011 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:02'}
+2024-12-03 14:43:02,513 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:02'}
+2024-12-03 14:43:03,031 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:03'}
+2024-12-03 14:43:03,534 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:03'}
+2024-12-03 14:43:04,037 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:04'}
+2024-12-03 14:43:04,540 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:04'}
+2024-12-03 14:43:05,041 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:05'}
+2024-12-03 14:43:05,544 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:05'}
+2024-12-03 14:43:06,044 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:06'}
+2024-12-03 14:43:06,548 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:06'}
+2024-12-03 14:43:07,050 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:07'}
+2024-12-03 14:43:07,550 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:07'}
+2024-12-03 14:43:08,053 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:08'}
+2024-12-03 14:43:08,555 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:08'}
+2024-12-03 14:43:09,057 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:09'}
+2024-12-03 14:43:09,559 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:09'}
+2024-12-03 14:43:10,061 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:10'}
+2024-12-03 14:43:10,565 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:10'}
+2024-12-03 14:43:11,066 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:11'}
+2024-12-03 14:43:11,567 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:11'}
+2024-12-03 14:43:12,070 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:12'}
+2024-12-03 14:43:12,572 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:12'}
+2024-12-03 14:43:13,071 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:13'}
+2024-12-03 14:43:13,575 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:13'}
+2024-12-03 14:43:14,076 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:14'}
+2024-12-03 14:43:14,575 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:14'}
+2024-12-03 14:43:15,077 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:15'}
+2024-12-03 14:43:15,581 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:15'}
+2024-12-03 14:43:16,081 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:16'}
+2024-12-03 14:43:16,583 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:16'}
+2024-12-03 14:43:17,084 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:17'}
+2024-12-03 14:43:17,584 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:17'}
+2024-12-03 14:43:18,086 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:18'}
+2024-12-03 14:43:18,588 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:18'}
+2024-12-03 14:43:19,091 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:19'}
+2024-12-03 14:43:19,593 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:19'}
+2024-12-03 14:43:20,095 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:20'}
+2024-12-03 14:43:20,594 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:20'}
+2024-12-03 14:43:21,098 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:21'}
+2024-12-03 14:43:21,599 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:21'}
+2024-12-03 14:43:22,101 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:22'}
+2024-12-03 14:43:22,603 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:22'}
+2024-12-03 14:43:23,103 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:23'}
+2024-12-03 14:43:23,605 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:23'}
+2024-12-03 14:43:24,107 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:24'}
+2024-12-03 14:43:24,611 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:24'}
+2024-12-03 14:43:25,112 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:25'}
+2024-12-03 14:43:25,613 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:25'}
+2024-12-03 14:43:26,115 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:26'}
+2024-12-03 14:43:26,615 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:26'}
+2024-12-03 14:43:27,119 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:27'}
+2024-12-03 14:43:27,619 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:27'}
+2024-12-03 14:43:28,121 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:28'}
+2024-12-03 14:43:28,622 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:28'}
+2024-12-03 14:43:29,125 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:29'}
+2024-12-03 14:43:29,628 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:29'}
+2024-12-03 14:43:30,129 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:30'}
+2024-12-03 14:43:30,632 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:30'}
+2024-12-03 14:43:31,133 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:31'}
+2024-12-03 14:43:31,635 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:31'}
+2024-12-03 14:43:32,136 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:32'}
+2024-12-03 14:43:32,636 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:32'}
+2024-12-03 14:43:33,140 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:33'}
+2024-12-03 14:43:33,642 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:33'}
+2024-12-03 14:43:34,144 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:34'}
+2024-12-03 14:43:34,644 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:34'}
+2024-12-03 14:43:35,147 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:35'}
+2024-12-03 14:43:35,649 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:35'}
+2024-12-03 14:43:36,152 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:36'}
+2024-12-03 14:43:36,651 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:36'}
+2024-12-03 14:43:37,153 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:37'}
+2024-12-03 14:43:37,657 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:37'}
+2024-12-03 14:43:38,160 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:38'}
+2024-12-03 14:43:38,662 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:38'}
+2024-12-03 14:43:39,163 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:39'}
+2024-12-03 14:43:39,665 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:39'}
+2024-12-03 14:43:40,167 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:40'}
+2024-12-03 14:43:40,669 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:40'}
+2024-12-03 14:43:41,169 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:41'}
+2024-12-03 14:43:41,673 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:41'}
+2024-12-03 14:43:42,173 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:42'}
+2024-12-03 14:43:42,675 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:42'}
+2024-12-03 14:43:43,178 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:43'}
+2024-12-03 14:43:43,680 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:43'}
+2024-12-03 14:43:44,182 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:44'}
+2024-12-03 14:43:44,684 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:44'}
+2024-12-03 14:43:45,186 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:45'}
+2024-12-03 14:43:45,688 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:45'}
+2024-12-03 14:43:46,188 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:46'}
+2024-12-03 14:43:46,693 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:46'}
+2024-12-03 14:43:47,195 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:47'}
+2024-12-03 14:43:47,694 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:47'}
+2024-12-03 14:43:48,199 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:48'}
+2024-12-03 14:43:48,701 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:48'}
+2024-12-03 14:43:49,202 [INFO]: Received: {'from': 'user', 'message': "How's it going?", 'date': '2024-12-03 14:43:49'}
+2024-12-03 14:43:49,706 [INFO]: Received: {'from': 'user', 'message': 'Hello', 'date': '2024-12-03 14:43:49'}
+2024-12-03 14:43:50,206 [INFO]: Received: {'from': 'user', 'message': 'Tell me a joke', 'date': '2024-12-03 14:43:50'}
+2024-12-03 14:43:50,709 [INFO]: Received: {'from': 'user', 'message': "What's the time?", 'date': '2024-12-03 14:43:50'}
+2024-12-03 14:43:51,208 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:51'}
+2024-12-03 14:43:51,711 [INFO]: Received: {'from': 'user', 'message': 'Tell me about weather', 'date': '2024-12-03 14:43:51'}
+2024-12-03 14:45:27,496 [INFO]: Stopping the chatbot...
+2024-12-03 14:45:27,496 [INFO]: Closing connection (200): Normal shutdown
+2024-12-03 14:45:27,498 [INFO]: Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000229F94B7080> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-12-03 14:45:27,500 [INFO]: Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000229F94B7080> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-12-03 14:45:27,500 [INFO]: Closing connection (200): 'Normal shutdown'
+2024-12-03 14:45:27,526 [INFO]: Aborting transport connection: state=1; <socket.socket fd=764, family=23, type=1, proto=6, laddr=('::1', 58554, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-12-03 14:45:27,527 [INFO]: _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=764, family=23, type=1, proto=6, laddr=('::1', 58554, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-12-03 14:45:27,528 [INFO]: Deactivating transport: state=1; <socket.socket fd=764, family=23, type=1, proto=6, laddr=('::1', 58554, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-12-03 14:45:27,528 [INFO]: AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-03 14:45:27,529 [INFO]: Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-03 14:45:27,530 [INFO]: Closing transport socket and unlinking: state=3; <socket.socket fd=764, family=23, type=1, proto=6, laddr=('::1', 58554, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-12-03 14:45:27,530 [INFO]: User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
