@@ -88,7 +88,7 @@ def main():
         print("Stopping the chatbot...")
         connection.close()
 ```
-# Scalability Enhancements
+## Scalability Enhancements
 - Database Integration: Store processed messages for future analytics using MongoDB
 ```python
 # MongoDB configuration
