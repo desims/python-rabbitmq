@@ -103,6 +103,14 @@ logging.basicConfig(
     ]
 )
 ```
+Sample logging and logging output
+```python
+        logging.info("Message saved to MongoDB.")
+    except Exception as e:
+        logging.error(f"Failed to save message to MongoDB: {e}")
+```
+![image](https://github.com/user-attachments/assets/f6118d5c-e8cf-4b01-9282-b87375babf26)
+
 
 ## Health Checks
 This project implements a **health check endpoint** for monitoring a RabbitMQ consumer service and its connected components (e.g., MongoDB). It ensures real-time visibility into service health.
@@ -155,3 +163,5 @@ def save_message_to_db(user_message, bot_response):
     except Exception as e:
         logging.error(f"Failed to save message to MongoDB: {e}")
 ```
+- Message history in MongoDB
+![image](https://github.com/user-attachments/assets/63bc351b-ed8d-4b54-a84a-65d368689720)
