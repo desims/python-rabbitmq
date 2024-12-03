@@ -34,10 +34,57 @@ pip install -r requirements.txt
 ## Message Producer
 - Publishes messages to a fanout exchange in RabbitMQ.
 - Simulates high-traffic with randomized and sequential messages.
-Code: 1_send.py
+
+```python
+def main():
+    # Connect to RabbitMQ
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST))
+    channel = connection.channel()
+
+    # Declare a fanout exchange
+    channel.exchange_declare(exchange=EXCHANGE_NAME, exchange_type="fanout")
+
+    print("Starting to send messages...")
+    while True:
+        # Create a simple random message
+        message = {
+            "from":"user",
+            "message": choice(MESSAGES), 
+            "date":datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        message_body = json.dumps(message)
+
+        # Publish to the fanout exchange
+        channel.basic_publish(exchange=EXCHANGE_NAME, routing_key="", body=message_body)
+        print(f"Sent: {message}")
+
+        # Simulate high traffic
+        time.sleep(0.5)
+```
 ## Message Consumer
 - Listens to the queue and processes incoming messages.
 - Provides chatbot-like responses based on messages map:
    "Hello" → "Hi there! 😊"
    "Tell me a joke" → "Why did the chicken cross the road? To get to the other side! 😂"
-Code: 2_receive.py
+```python
+def main():
+    # Connect to RabbitMQ
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST))
+    channel = connection.channel()
+
+    # Declare a temporary queue to bind to the exchange
+    result = channel.queue_declare(queue="", exclusive=True)
+    queue_name = result.method.queue
+
+    # Bind the queue to the exchange
+    channel.queue_bind(exchange=EXCHANGE_NAME, queue=queue_name)
+
+    print("Chatbot is ready and listening for messages...")
+    channel.basic_consume(queue=queue_name, on_message_callback=callback)
+
+    try:
+        channel.start_consuming()
+    except KeyboardInterrupt:
+        print("Stopping the chatbot...")
+        connection.close()
+```
