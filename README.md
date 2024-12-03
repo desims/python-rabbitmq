@@ -90,6 +90,20 @@ def main():
 ```
 
 ## Error Handling & Logging
+The service uses robust logging to track its operations and errors. Logs are formatted with timestamps for easy debugging and are written to both a file (`consumer.log`) and the console.
+```3_receive_log.py```
+```python
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s]: %(message)s",
+    handlers=[
+        logging.FileHandler("consumer.log"),
+        logging.StreamHandler()
+    ]
+)
+```
+
 ## Health Checks
 This project implements a **health check endpoint** for monitoring a RabbitMQ consumer service and its connected components (e.g., MongoDB). It ensures real-time visibility into service health.
 Feature :
