@@ -64,8 +64,8 @@ def main():
 ## Message Consumer
 - Listens to the queue and processes incoming messages.
 - Provides chatbot-like responses based on messages map:
-   "Hello" → "Hi there! 😊"
-   "Tell me a joke" → "Why did the chicken cross the road? To get to the other side! 😂"
+   - "Hello" → "Hi there! 😊"
+   - "Tell me a joke" → "Why did the chicken cross the road? To get to the other side! 😂"
 ```python
 def main():
     # Connect to RabbitMQ
@@ -91,6 +91,7 @@ def main():
 
 ## Error Handling & Logging
 The service uses robust logging to track its operations and errors. Logs are formatted with timestamps for easy debugging and are written to both a file (`consumer.log`) and the console.
+
 ```3_receive_log.py```
 ```python
 # Configure logging
@@ -118,6 +119,7 @@ Feature :
 - **Health Check Endpoint**: Monitors RabbitMQ, MongoDB, and processing status.
 - **Multithreading**: Runs Flask health checks alongside the RabbitMQ consumer.
 - **Detailed Status**: Returns `"ok"` or `"degraded"` with component details.
+  
 ```4_receive_health.py```
 ```python
 # Health Check Endpoint
@@ -136,8 +138,13 @@ if __name__ == "__main__":
     flask_thread.daemon = True
     flask_thread.start()
 ```
+health output sample
+![image](https://github.com/user-attachments/assets/83719ef3-e1fd-4daf-a863-fb1f0619b8f7)
+
 ## Scalability Enhancements
 - Database Integration: Store processed messages for future analytics using MongoDB
+
+```5_scalability```
 ```python
 # MongoDB configuration
 MONGO_URI = "mongodb://localhost:27017/"
